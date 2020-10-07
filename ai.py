@@ -24,7 +24,7 @@ class AlphaBetaSearch:
         maxplies- Maximum ply depth to search
         verbose - Output debugging information
         """
-        
+        self.maxplies = maxplies
         raise NotImplemented
 
 
@@ -44,8 +44,8 @@ class AlphaBetaSearch:
         :return: True if search is to be stopped (terminal state or cutoff
            condition reached)
         """
-
-        raise NotImplemented
+        # test for terminal state with state
+        return state.is_terminal() or ply >= self.maxplies
 
 
     def maxvalue(self, state, alpha, beta, ply):
@@ -99,7 +99,9 @@ class Strategy(abstractstrategy.Strategy):
         play(board) - Find best move on current board for the maxplayer
         Returns (newboard, action)
         """
-
+        moves = self.evaluate(board)
+        # Find the best action
+        board.move()
         raise NotImplemented
     
     def evaluate(self, state, turn = None):
@@ -112,8 +114,21 @@ class Strategy(abstractstrategy.Strategy):
                   (bigger numbers for max player, smaller numbers for
                    min player)
         """
+        # determine which players turn is being evaluated
+        player = None
+        if turn % 2 == 0:
+            player = 0
+        else:
+            player = 1
 
-        raise NotImplmented
+        # get number of pawns for the specified player
+        pawns = state.get_pawnsN()[player]
+        kings = state.getkingsN()[player]
+
+        # 1.) set up variables based on game state (from lecture slides)
+        # 2.) create conditional block statement to assign heuristic weight values based on player passed in
+        # 3.) sum up values and return as the heuristic value of the game state
+        raise NotImplemented
         
 
 # Run test cases if invoked as main module
