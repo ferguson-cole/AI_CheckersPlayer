@@ -118,21 +118,15 @@ class Strategy(abstractstrategy.Strategy):
         player’s turn, but may be ignored if you do not want to create a turn
         specific evaluation function.
         """
-        # determine which players turn is being evaluated
-        # player = None
-        # if turn % 2 == 0:
-        #     player = 0
-        # else:
-        #     player = 1
-        #
-        # # get number of pawns for the specified player
-        # pawns = state.get_pawnsN()[player]
-        # kings = state.getkingsN()[player]
+        # pawn_dif=      max player pawns - min player pawns
+        pawn_diff = state.get_pawnsN()[0] - state.get_pawnsN()[1]
+        # king_dif=      max player kings - min player kings
+        king_diff = state.get_kingsN()[0] - state.get_kingsN()[1]
 
+        return sum(pawn_diff, king_diff)
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
-        return ()
         
 
 # Run test cases if invoked as main module
@@ -142,12 +136,12 @@ if __name__ == "__main__":
     blackstrat = Strategy('b', b, 6)
     
     print(b)
-    (nb, action) = redsttrat.play(b)
+    (nb, action) = redstrat.play(b)
     print("Red would select ", action)
     print(nb)
     
     
-    (nb, action) = blacstrat.play(b)
+    (nb, action) = blackstrat.play(b)
     print("Black would select ", action)
     print(nb)
     
