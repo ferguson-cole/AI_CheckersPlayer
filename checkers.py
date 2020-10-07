@@ -19,6 +19,8 @@ import statistics
 # We'll format the path to the tonto module based on the
 # release of Python.  Note that we provided tonto compilations for Python 3.7
 # and 3.8.  If you're not using one of these, it won't work.
+from lib.checkerboard import CheckerBoard
+
 if True:
     import imp
     import sys
@@ -29,7 +31,7 @@ if True:
 
 
 # human - human player, prompts for input    
-from lib import human, checkerboard, tonto
+from lib import human, checkerboard, boardlibrary
 
 from lib.timer import Timer
 
@@ -46,8 +48,9 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
     Returns winning player 'r' or 'b'
     """
-
-    raise NotImplemented
+    board = init
+    tonto_strat = Strategy('b', )
+    return 1
             
 if __name__ == "__main__":
     # Examples
@@ -57,7 +60,7 @@ if __name__ == "__main__":
     #Game(init=boardlibrary.boards["EndGame1"], firstmove = 1)
 
     # Tonto vs Tonto
-    Game(red=tonto.Strategy, black=tonto.Strategy)
+    Game(red=tonto.Strategy, black=tonto.Strategy, init=boardlibrary.boards["multihop"])
 
     #Play with default strategies...
     #Game()
