@@ -33,6 +33,8 @@ if True:
 # human - human player, prompts for input    
 from lib import human, checkerboard, boardlibrary
 
+import ai
+
 from lib.timer import Timer
 
 
@@ -48,8 +50,8 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
     Returns winning player 'r' or 'b'
     """
-    board = init
-    tonto_strat = Strategy('b', )
+    tonto_strat = ai.Strategy('b', init, 3)
+    tonto_strat.play(init)
     return 1
             
 if __name__ == "__main__":
