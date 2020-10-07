@@ -100,9 +100,9 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         moves = self.evaluate(board)
-        # Find the best action
-        board.move()
-        raise NotImplemented
+        # Find the best action (either pop from queue or idx 0 in ordered list)
+        # using index 0 (evaluate() strength ordered from max player to min player)
+        return board.move(moves[0]), moves[0]
     
     def evaluate(self, state, turn = None):
         """
