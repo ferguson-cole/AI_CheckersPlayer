@@ -12,7 +12,6 @@ Pair Programmer 2 - Ryan Hildebrant, 10/6/20
 
 from lib import abstractstrategy, boardlibrary
 
-
 class AlphaBetaSearch:
     
     def __init__(self, strategy, maxplayer, minplayer, maxplies=3, 
@@ -25,7 +24,7 @@ class AlphaBetaSearch:
         verbose - Output debugging information
         """
         self.maxplies = maxplies
-        raise NotImplemented
+        return
 
 
     def alphabeta(self, state):
@@ -44,7 +43,6 @@ class AlphaBetaSearch:
         :return: True if search is to be stopped (terminal state or cutoff
            condition reached)
         """
-        # test for terminal state with state
         return state.is_terminal() or ply >= self.maxplies
 
 
@@ -99,10 +97,8 @@ class Strategy(abstractstrategy.Strategy):
         play(board) - Find best move on current board for the maxplayer
         Returns (newboard, action)
         """
-        moves = self.evaluate(board)
-        # Find the best action (either pop from queue or idx 0 in ordered list)
-        # using index 0 (evaluate() strength ordered from max player to min player)
-        return board.move(moves[0]), moves[0]
+        action = self.search.alphabeta(board)
+        return board.move(action), action
     
     def evaluate(self, state, turn = None):
         """
@@ -110,25 +106,33 @@ class Strategy(abstractstrategy.Strategy):
         utility of a non-terminal state
         :param state: Game state
         :param turn: Optional turn (None to omit)
-        :return:  utility or utility estimate based on strengh of board
+        :return:  utility or utility estimate based on strength of board
                   (bigger numbers for max player, smaller numbers for
                    min player)
+
+        Takes a CheckerBoard and turn and determines the strength
+        related to the maxplayer given in the constructor. For example,
+        a strong red board should return a high score if the constructor
+        was invoked with ‘r’, and a low score with ‘b’. The optional argument
+        turn may be used to enhance your evaluation function for a specific
+        player’s turn, but may be ignored if you do not want to create a turn
+        specific evaluation function.
         """
         # determine which players turn is being evaluated
-        player = None
-        if turn % 2 == 0:
-            player = 0
-        else:
-            player = 1
-
-        # get number of pawns for the specified player
-        pawns = state.get_pawnsN()[player]
-        kings = state.getkingsN()[player]
+        # player = None
+        # if turn % 2 == 0:
+        #     player = 0
+        # else:
+        #     player = 1
+        #
+        # # get number of pawns for the specified player
+        # pawns = state.get_pawnsN()[player]
+        # kings = state.getkingsN()[player]
 
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
-        raise NotImplemented
+        return ()
         
 
 # Run test cases if invoked as main module
