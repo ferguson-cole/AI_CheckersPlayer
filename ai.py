@@ -12,6 +12,9 @@ Pair Programmer 2 - Ryan Hildebrant, 10/6/20
 
 from lib import abstractstrategy, boardlibrary
 
+import math
+
+
 class AlphaBetaSearch:
     
     def __init__(self, strategy, maxplayer, minplayer, maxplies=3, 
@@ -118,12 +121,48 @@ class Strategy(abstractstrategy.Strategy):
         player’s turn, but may be ignored if you do not want to create a turn
         specific evaluation function.
         """
+
+        """ Look at potential captures """
+        max_weight = 10000
+        max_p_can_capture = len(state.get_actions(self.maxplayer)[0][1]) == 3
+        min_p_can_capture = len(state.get_actions(self.minplayer)[0][1]) == 3
+
+        if max_p_can_capture:
+            return max_weight
+        if min_p_can_capture:
+            return - max_weight
+
+        """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
         pawn_diff = state.get_pawnsN()[0] - state.get_pawnsN()[1]
         # king_dif=      max player kings - min player kings
         king_diff = state.get_kingsN()[0] - state.get_kingsN()[1]
 
-        return sum(pawn_diff, king_diff)
+        """ Distance to be King """
+        max_p_dist_sum = 0
+        min_p_dist_sum = 0
+        # find the distances from being king for each pawn
+        for r, c, piece in state:
+            if piece is self.maxplayer:
+                max_p_dist_sum += state.disttoking(self.maxplayer, r)
+            if piece is self.minplayer:
+                min_p_dist_sum += state.disttoking(self.minplayer, r)
+
+        # larger sums -> smaller values
+        if max_p_dist_sum != 0:
+            max_p_dist_sum = 1 / max_p_dist_sum
+        if min_p_dist_sum != 0:
+            min_p_dist_sum = 1 / min_p_dist_sum
+
+        dist_diff = max_p_dist_sum - min_p_dist_sum
+
+        # # If red-favored board
+        # if self.maxplayer is 'r':
+        #     assert (pawn_diff + king_diff + dist_diff) > 0
+        # else:
+        #     assert (pawn_diff + king_diff + dist_diff) < 0
+
+        return pawn_diff + king_diff + dist_diff
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
@@ -131,19 +170,21 @@ class Strategy(abstractstrategy.Strategy):
 
 # Run test cases if invoked as main module
 if __name__ == "__main__":
-    b = boardlibrary.boards["StrategyTest1"]
-    redstrat = Strategy('r', b, 6)
-    blackstrat = Strategy('b', b, 6)
-    
-    print(b)
-    (nb, action) = redstrat.play(b)
-    print("Red would select ", action)
-    print(nb)
-    
-    
-    (nb, action) = blackstrat.play(b)
-    print("Black would select ", action)
-    print(nb)
+    b = boardlibrary.boards["SingleHopsBlack"]
+    redstrat = Strategy('r', b, 8)
+    result = redstrat.evaluate(b)
+    print(result)
+    # blackstrat = Strategy('b', b, 6)
+    #
+    # print(b)
+    # (nb, action) = redstrat.play(b)
+    # print("Red would select ", action)
+    # print(nb)
+    #
+    #
+    # (nb, action) = blackstrat.play(b)
+    # print("Black would select ", action)
+    # print(nb)
     
  
 
