@@ -26,8 +26,10 @@ class AlphaBetaSearch:
         maxplies- Maximum ply depth to search
         verbose - Output debugging information
         """
+        self.maxplayer = maxplayer
+        self.minplayer = minplayer
+        self.strategy = strategy
         self.maxplies = maxplies
-        return
 
 
     def alphabeta(self, state):
@@ -36,6 +38,12 @@ class AlphaBetaSearch:
         :param state: Instance of the game representation
         :return: best action for maxplayer
         """
+        """ Look at potential captures """
+        max_p_capture_action = state.get_actions(self.maxplayer)[0][1]
+        max_p_can_capture = ( len(max_p_capture_action) == 3 )
+
+        if max_p_can_capture:
+            return max_p_capture_action
         raise NotImplemented
 
     def cutoff(self, state, ply):
@@ -60,7 +68,11 @@ class AlphaBetaSearch:
         :param ply: current search depth
         :return: (value, maxaction)
         """
-
+        # if cutoff(...):
+        #   return (value, maxaction)
+        # else:
+        #   value, maxaction = minvalue(...)
+        # return value, maxaction
         raise NotImplemented
                     
     def minvalue(self, state, alpha, beta, ply):
@@ -121,16 +133,10 @@ class Strategy(abstractstrategy.Strategy):
         player’s turn, but may be ignored if you do not want to create a turn
         specific evaluation function.
         """
-
-        """ Look at potential captures """
-        max_weight = 10000
-        max_p_can_capture = len(state.get_actions(self.maxplayer)[0][1]) == 3
-        min_p_can_capture = len(state.get_actions(self.minplayer)[0][1]) == 3
-
-        if max_p_can_capture:
-            return max_weight
-        if min_p_can_capture:
-            return - max_weight
+        """ Weights """
+        weight_num_pawn = .5
+        weight_num_king = .5
+        weight_king_dist = 5
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
@@ -162,7 +168,10 @@ class Strategy(abstractstrategy.Strategy):
         # else:
         #     assert (pawn_diff + king_diff + dist_diff) < 0
 
-        return pawn_diff + king_diff + dist_diff
+        # Return sum of each aspect of our evaluation multiplied by its weight
+        return pawn_diff * weight_num_pawn +\
+               king_diff * weight_num_king +\
+               dist_diff * weight_king_dist
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
@@ -170,10 +179,11 @@ class Strategy(abstractstrategy.Strategy):
 
 # Run test cases if invoked as main module
 if __name__ == "__main__":
-    b = boardlibrary.boards["SingleHopsBlack"]
+    b = boardlibrary.boards["Pristine"]
     redstrat = Strategy('r', b, 8)
     result = redstrat.evaluate(b)
     print(result)
+    alpha
     # blackstrat = Strategy('b', b, 6)
     #
     # print(b)
