@@ -39,15 +39,14 @@ class AlphaBetaSearch:
         :return: best action for maxplayer
         """
         """ Look at potential captures """
-        max_p_capture_action = state.get_actions(self.maxplayer)[0][1]
-        actions = state.get_actions(self.maxplayer)
-        max_p_can_capture = ( len(max_p_capture_action) == 3 )
+        max_p_capture_action = state.get_actions(self.maxplayer)[0]
+        max_p_can_capture = ( len(max_p_capture_action[1]) == 3 )
 
         if max_p_can_capture:
             return max_p_capture_action
 
+        """ Enter alpha-beta pruning """
         # v = self.maxvalue(state, -inf, inf, 1)
-        print(state)
         return self.maxvalue(state, -inf, inf, 1)[1]
 
     def cutoff(self, state, ply):
@@ -211,10 +210,15 @@ class Strategy(abstractstrategy.Strategy):
 
 # Run test cases if invoked as main module
 if __name__ == "__main__":
-    b = boardlibrary.boards["EndGame1"]
+    # b = boardlibrary.boards["Pristine"]
+    b = boardlibrary.boards["SingleHopsRed"]
     redstrat = Strategy('r', b, 8)
     result = redstrat.evaluate(b)
-    print(redstrat.search.alphabeta(b))
+    print("BEFORE --\n" + str(b))
+    act = redstrat.search.alphabeta(b)
+    print(act)
+    b = b.move(act)
+    print("AFTER --\n" + str(b))
     # blackstrat = Strategy('b', b, 6)
     #
     # print(b)
