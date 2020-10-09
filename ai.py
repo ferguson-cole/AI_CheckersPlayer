@@ -12,7 +12,7 @@ Pair Programmer 2 - Ryan Hildebrant, 10/6/20
 
 from lib import abstractstrategy, boardlibrary
 
-import math
+from math import inf
 
 
 class AlphaBetaSearch:
@@ -40,11 +40,15 @@ class AlphaBetaSearch:
         """
         """ Look at potential captures """
         max_p_capture_action = state.get_actions(self.maxplayer)[0][1]
+        actions = state.get_actions(self.maxplayer)
         max_p_can_capture = ( len(max_p_capture_action) == 3 )
 
         if max_p_can_capture:
             return max_p_capture_action
-        raise NotImplemented
+
+        # v = self.maxvalue(state, -inf, inf, 1)
+        print(state)
+        return self.maxvalue(state, -inf, inf, 1)[1]
 
     def cutoff(self, state, ply):
         """
@@ -54,7 +58,9 @@ class AlphaBetaSearch:
         :return: True if search is to be stopped (terminal state or cutoff
            condition reached)
         """
-        return state.is_terminal() or ply >= self.maxplies
+        t = state.is_terminal()[0]
+        p = ply >= self.maxplies
+        return state.is_terminal()[0] or ply >= self.maxplies
 
 
     def maxvalue(self, state, alpha, beta, ply):
@@ -68,12 +74,23 @@ class AlphaBetaSearch:
         :param ply: current search depth
         :return: (value, maxaction)
         """
-        # if cutoff(...):
-        #   return (value, maxaction)
-        # else:
-        #   value, maxaction = minvalue(...)
-        # return value, maxaction
-        raise NotImplemented
+        max_action = None
+        if self.cutoff(state, ply):
+            v = self.strategy.evaluate(state)
+        else:
+            v = -inf
+            if ply % 2 == 0:
+                player = self.minplayer
+            else:
+                player = self.maxplayer
+            for action in state.get_actions(player):
+                v = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
+                max_action = action
+                alpha = max(alpha, v)
+                if alpha >= beta:
+                    break
+        return v, max_action
+
                     
     def minvalue(self, state, alpha, beta, ply):
         """
@@ -85,9 +102,22 @@ class AlphaBetaSearch:
         :return: (v, minaction)  Value of min action and the action that
            produced it.
         """
-
-        raise NotImplemented
-
+        max_action = None
+        if self.cutoff(state, ply):
+            v = self.strategy.evaluate(state)
+        else:
+            v = inf
+            if ply % 2 == 0:
+                player = self.minplayer
+            else:
+                player = self.maxplayer
+            for action in state.get_actions(player):
+                v = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
+                max_action = action
+                alpha = min(alpha, v)
+                if alpha <= beta:
+                    break
+        return v, max_action
 
 
 class Strategy(abstractstrategy.Strategy):
@@ -106,7 +136,8 @@ class Strategy(abstractstrategy.Strategy):
         self.search = \
             AlphaBetaSearch(self, self.maxplayer, self.minplayer,
                                    maxplies=self.maxplies, verbose=False)
-     
+
+
     def play(self, board):
         """
         play(board) - Find best move on current board for the maxplayer
@@ -114,7 +145,8 @@ class Strategy(abstractstrategy.Strategy):
         """
         action = self.search.alphabeta(board)
         return board.move(action), action
-    
+
+
     def evaluate(self, state, turn = None):
         """
         evaluate - Determine utility of terminal state or estimated
@@ -179,11 +211,10 @@ class Strategy(abstractstrategy.Strategy):
 
 # Run test cases if invoked as main module
 if __name__ == "__main__":
-    b = boardlibrary.boards["Pristine"]
+    b = boardlibrary.boards["EndGame1"]
     redstrat = Strategy('r', b, 8)
     result = redstrat.evaluate(b)
-    print(result)
-    alpha
+    print(redstrat.search.alphabeta(b))
     # blackstrat = Strategy('b', b, 6)
     #
     # print(b)
