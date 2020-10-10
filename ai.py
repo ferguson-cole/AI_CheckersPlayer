@@ -164,25 +164,43 @@ class Strategy(abstractstrategy.Strategy):
         player’s turn, but may be ignored if you do not want to create a turn
         specific evaluation function.
         """
+        player_diff = []
         """ Weights """
         weight_num_pawn = .5
         weight_num_king = .5
         weight_king_dist = 5
+        weight_edge_piece = 2
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
         pawn_diff = state.get_pawnsN()[0] - state.get_pawnsN()[1]
+        player_diff.append(pawn_diff * weight_num_pawn)
         # king_dif=      max player kings - min player kings
         king_diff = state.get_kingsN()[0] - state.get_kingsN()[1]
+        player_diff.append(king_diff * weight_num_king)
 
         """ Distance to be King """
         max_p_dist_sum = 0
         min_p_dist_sum = 0
         # find the distances from being king for each pawn
         for r, c, piece in state:
-            if piece is self.maxplayer:
+            # Test if piece is on edge of the board
+            if self.is_edge_piece(r, c, state.edgesize):
+                # If edge piece is maxplayer's
+                if state.isplayer(self.maxplayer, piece):
+                    player_weight = 1
+                # If edge piece is minplayer's
+                # elif state.isplayer(self.minplayer, piece):
+                #     player_weight = -1
+                else:
+                    player_weight = 0
+
+                player_diff.append(weight_edge_piece * player_weight)
+
+            # Evaluate the approx. distance to be a king
+            if state.isplayer(self.maxplayer, piece):
                 max_p_dist_sum += state.disttoking(self.maxplayer, r)
-            if piece is self.minplayer:
+            if state.isplayer(self.minplayer, piece):
                 min_p_dist_sum += state.disttoking(self.minplayer, r)
 
         # larger sums -> smaller values
@@ -192,33 +210,39 @@ class Strategy(abstractstrategy.Strategy):
             min_p_dist_sum = 1 / min_p_dist_sum
 
         dist_diff = max_p_dist_sum - min_p_dist_sum
+        player_diff.append(dist_diff * weight_king_dist)
 
-        # # If red-favored board
-        # if self.maxplayer is 'r':
-        #     assert (pawn_diff + king_diff + dist_diff) > 0
-        # else:
-        #     assert (pawn_diff + king_diff + dist_diff) < 0
-
-        # Return sum of each aspect of our evaluation multiplied by its weight
-        return pawn_diff * weight_num_pawn +\
-               king_diff * weight_num_king +\
-               dist_diff * weight_king_dist
+        print(str(self.maxplayer) + " -- " + str(sum(player_diff)))
+        # Return sum of each aspect of our evaluation
+        return sum(player_diff)
+        # return pawn_diff * weight_num_pawn +\
+        #        king_diff * weight_num_king +\
+        #        dist_diff * weight_king_dist
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
         
 
+    def is_edge_piece(self, r, c, board_size):
+        in_first_row = (r-1) < 0
+        in_first_col = (c-1) < 0
+        in_last_row = (r+1) > (board_size - 1)
+        in_last_col = (c+1) > (board_size - 1)
+        return in_first_row or in_first_col \
+               or in_last_row or in_last_col
+
 # Run test cases if invoked as main module
 if __name__ == "__main__":
+    pass
     # b = boardlibrary.boards["Pristine"]
-    b = boardlibrary.boards["SingleHopsRed"]
-    redstrat = Strategy('r', b, 8)
-    result = redstrat.evaluate(b)
-    print("BEFORE --\n" + str(b))
-    act = redstrat.search.alphabeta(b)
-    print(act)
-    b = b.move(act)
-    print("AFTER --\n" + str(b))
+    # b = boardlibrary.boards["SingleHopsRed"]
+    # redstrat = Strategy('r', b, 8)
+    # result = redstrat.evaluate(b)
+    # print("BEFORE --\n" + str(b))
+    # act = redstrat.search.alphabeta(b)
+    # print(act)
+    # b = b.move(act)
+    # print("AFTER --\n" + str(b))
     # blackstrat = Strategy('b', b, 6)
     #
     # print(b)
