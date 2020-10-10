@@ -69,7 +69,7 @@ class AlphaBetaSearch:
         minimize utility.
         :param state: current state
         :param alpha: lower bound of best move max player can make
-        :param beta: upper bound of best move max player can make
+        :param beta: upper bound of best move max player can make (at most)
         :param ply: current search depth
         :return: (value, maxaction)
         """
@@ -78,11 +78,11 @@ class AlphaBetaSearch:
             v = self.strategy.evaluate(state)
         else:
             v = -inf
-            if ply % 2 == 0:
-                player = self.minplayer
-            else:
-                player = self.maxplayer
-            for action in state.get_actions(player):
+            # if ply % 2 == 0:
+            #     player = self.minplayer
+            # else:
+            #     player = self.maxplayer
+            for action in state.get_actions(self.maxplayer):
                 v = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
                 max_action = action
                 alpha = max(alpha, v)
@@ -106,11 +106,11 @@ class AlphaBetaSearch:
             v = self.strategy.evaluate(state)
         else:
             v = inf
-            if ply % 2 == 0:
-                player = self.minplayer
-            else:
-                player = self.maxplayer
-            for action in state.get_actions(player):
+            # if ply % 2 == 0:
+            #     player = self.minplayer
+            # else:
+            #     player = self.maxplayer
+            for action in state.get_actions(self.minplayer):
                 v = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
                 max_action = action
                 alpha = min(alpha, v)
@@ -143,6 +143,7 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         action = self.search.alphabeta(board)
+        print(action)
         return board.move(action), action
 
 
@@ -166,10 +167,17 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = .5
-        weight_num_king = .5
+        weight_num_pawn = 50
+        weight_num_king = 80
         weight_king_dist = 5
         weight_edge_piece = 2
+        weight_moves_available = 2
+        weight_goalie = 4
+
+        """ Amount of moves available """
+        count = len(state.get_actions(self.maxplayer))
+        player_diff.append(count * weight_moves_available)
+
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
@@ -179,19 +187,20 @@ class Strategy(abstractstrategy.Strategy):
         king_diff = state.get_kingsN()[0] - state.get_kingsN()[1]
         player_diff.append(king_diff * weight_num_king)
 
-        """ Distance to be King """
+        """ Distance to be King, Edge Pieces """
         max_p_dist_sum = 0
         min_p_dist_sum = 0
-        # find the distances from being king for each pawn
+
         for r, c, piece in state:
+            # Test if any 'goalies' (back row pieces that prevent enemy from king-ing)
+            if self.is_goalie(r, state.edgesize, self.maxplayer):
+                player_diff.append(weight_goalie)
+
             # Test if piece is on edge of the board
             if self.is_edge_piece(r, c, state.edgesize):
                 # If edge piece is maxplayer's
                 if state.isplayer(self.maxplayer, piece):
                     player_weight = 1
-                # If edge piece is minplayer's
-                # elif state.isplayer(self.minplayer, piece):
-                #     player_weight = -1
                 else:
                     player_weight = 0
 
@@ -212,7 +221,7 @@ class Strategy(abstractstrategy.Strategy):
         dist_diff = max_p_dist_sum - min_p_dist_sum
         player_diff.append(dist_diff * weight_king_dist)
 
-        print(str(self.maxplayer) + " -- " + str(sum(player_diff)))
+        # print(str(self.maxplayer) + " == " + str(sum(player_diff)))
         # Return sum of each aspect of our evaluation
         return sum(player_diff)
         # return pawn_diff * weight_num_pawn +\
@@ -230,6 +239,16 @@ class Strategy(abstractstrategy.Strategy):
         in_last_col = (c+1) > (board_size - 1)
         return in_first_row or in_first_col \
                or in_last_row or in_last_col
+
+
+    def is_goalie(self, r, board_size, player):
+        in_black_row = (r - 1) < 0
+        in_red_row = (r + 1) > (board_size - 1)
+        if player is 'r':
+            return in_red_row
+        if player is 'b':
+            return in_black_row
+
 
 # Run test cases if invoked as main module
 if __name__ == "__main__":
