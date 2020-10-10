@@ -69,8 +69,10 @@ def Game(red=human.Strategy, black=tonto.Strategy,
     while board.is_terminal()[0] is False:
         if is_red_turn:
             board = red_strategy.play(board)[0]
+            print(board)
         else:
             board = black_strategy.play(board)[0]
+            print(board)
 
         if verbose:
             num_moves += 1
@@ -88,5 +90,5 @@ def Game(red=human.Strategy, black=tonto.Strategy,
             
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsRed"])
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"])
 
