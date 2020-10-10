@@ -50,30 +50,43 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
     Returns winning player 'r' or 'b'
     """
-    tonto_strat = ai.Strategy('b', init, 3)
-    tonto_strat.play(init)
-    return 1
+    # Variables to improve readability/assist in testing
+    player_black = 'b'
+    player_red = 'r'
+    num_moves = 0
+    is_red_turn = True
+    winner = None
+
+    board = init
+    # If init is None, we create a clean board
+    if init is None:
+        board = boardlibrary.boards["Pristine"]
+
+    red_strategy = red(player_red, board, maxplies)
+    black_strategy = black(player_black, board, maxplies)
+
+    # While game is in progress, continually apply moves for each player
+    while board.is_terminal()[0] is False:
+        if is_red_turn:
+            board = red_strategy.play(board)[0]
+        else:
+            board = black_strategy.play(board)[0]
+
+        if verbose:
+            num_moves += 1
+            # print(board)
+        # Invert our turn flag
+        is_red_turn = not is_red_turn
+
+    for r, c, piece in board:
+        pass
+    # Grab the current winner (is None if no winner yet)
+    winner = board.is_terminal()[1]
+    if verbose:
+        print(winner + " in " + str(num_moves) + " moves.")
+    return winner
             
 if __name__ == "__main__":
-    # Examples
-    # Starting from specific board with default strategy
-    #Game(init=boardlibrary.boards["multihop"])
-    #Game(init=boardlibrary.boards["StrategyTest1"])
-    #Game(init=boardlibrary.boards["EndGame1"], firstmove = 1)
-
     # Tonto vs Tonto
-    Game(red=tonto.Strategy, black=tonto.Strategy, init=boardlibrary.boards["multihop"])
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsRed"])
 
-    #Play with default strategies...
-    #Game()
-        
-        
-        
-
-        
-                    
-            
-        
-
-    
-    
