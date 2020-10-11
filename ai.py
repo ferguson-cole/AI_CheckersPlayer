@@ -40,6 +40,8 @@ class AlphaBetaSearch:
         max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
+            print("WE CAN MAKE A CAPTURE")
+            print(max_p_can_capture)
             return max_p_capture_action
 
         """ Enter alpha-beta pruning """
@@ -79,15 +81,16 @@ class AlphaBetaSearch:
             # else:
             #     player = self.maxplayer
             for action in state.get_actions(self.maxplayer):
-                test = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
-                if test > v:
-                    v = test
-                    print(v)
-                    return v, action
-                alpha = max(alpha, v)
+                new_v_value = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
+                if new_v_value > v:
+                    v = new_v_value
+                    alpha = max(alpha, v)
+                    max_action = action
                 if alpha >= beta:
                     break
         # print("Value of max action: " + str(v))
+        if max_action is None:
+            pass
         return v, max_action
 
     def minvalue(self, state, alpha, beta, ply):
@@ -113,12 +116,13 @@ class AlphaBetaSearch:
                 test = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
                 if test < v:
                     v = test
-                    print(v)
-                    return v, action
-                alpha = min(alpha, v)
+                    alpha = min(alpha, v)
+                    min_action = action
                 if alpha <= beta:
                     break
         # print("Value of min action: " + str(v))
+        if min_action is None:
+            pass
         return v, min_action
 
 
@@ -145,7 +149,9 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         action = self.search.alphabeta(board)
-        # print(action)
+        print("THIS IS OUR CHOICE OF PLAY!")
+        print(action)
+        # TODO - Fix action if it is none so that we do not get an error in the move function
         return board.move(action), action
 
     def evaluate(self, state, turn=None):
@@ -167,11 +173,11 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = 50
-        weight_num_king = 80
-        weight_king_dist = 5
-        weight_edge_piece = 2
-        weight_moves_available = 2
+        weight_num_pawn = 5
+        weight_num_king = 8
+        weight_king_dist = 4
+        weight_edge_piece = 3
+        weight_moves_available = 2.5
         weight_goalie = 4
 
         """ Amount of moves available """
@@ -245,4 +251,3 @@ class Strategy(abstractstrategy.Strategy):
             return in_red_row
         if player == 'b':
             return in_black_row
-
