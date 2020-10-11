@@ -175,10 +175,11 @@ class Strategy(abstractstrategy.Strategy):
         """ Weights """
         weight_num_pawn = 5
         weight_num_king = 8
-        weight_king_dist = 4
+        weight_king_dist = 3
         weight_edge_piece = 3
-        weight_moves_available = 2.5
+        weight_moves_available = 3
         weight_goalie = 4
+        weight_king_in_last_row = -4
 
         """ Amount of moves available """
         count = len(state.get_actions(self.maxplayer))
@@ -200,6 +201,11 @@ class Strategy(abstractstrategy.Strategy):
             # Test if any 'goalies' (back row pieces that prevent enemy from king-ing)
             if self.is_goalie(r, state.edgesize, self.maxplayer):
                 player_diff.append(weight_goalie)
+
+            # TODO - make sure this works
+            #See if piece is a king, if so, try to move it back
+            if piece is 'R' and r == 0:
+                player_diff.append(weight_king_in_last_row)
 
             # Test if piece is on edge of the board
             if self.is_edge_piece(r, c, state.edgesize):
