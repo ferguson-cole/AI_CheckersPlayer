@@ -14,7 +14,6 @@
 # Decompilation is cheating, don't do it.
 import statistics
 
-
 # Python can load compiled modules using the imp module (deprecated)
 # We'll format the path to the tonto module based on the
 # release of Python.  Note that we provided tonto compilations for Python 3.7
@@ -24,13 +23,13 @@ from lib.checkerboard import CheckerBoard
 if True:
     import imp
     import sys
+
     major = sys.version_info[0]
     minor = sys.version_info[1]
     modpath = "lib/__pycache__/tonto.cpython-{}{}.pyc".format(major, minor)
     tonto = imp.load_compiled("tonto", modpath)
 
-
-# human - human player, prompts for input    
+# human - human player, prompts for input
 from lib import human, checkerboard, boardlibrary
 
 import ai
@@ -46,8 +45,7 @@ def Game(red=human.Strategy, black=tonto.Strategy,
     maxplies - # of turns to explore (default 10)
     init - Start with given board (default None uses a brand new game)
     verbose - Show messages (default True)
-    firstmove - Player N starts 0 (red) or 1 (black).  Default 0. 
-
+    firstmove - Player N starts 0 (red) or 1 (black).  Default 0.
     Returns winning player 'r' or 'b'
     """
     # Variables to improve readability/assist in testing
@@ -85,10 +83,12 @@ def Game(red=human.Strategy, black=tonto.Strategy,
     # Grab the current winner (is None if no winner yet)
     winner = board.is_terminal()[1]
     if verbose:
-        print(winner + " in " + str(num_moves) + " moves.")
+        if winner is None:
+            winner = 'No winner'
+        print(winner + " in " + str(num_moves / 2) + " moves.")
     return winner
-            
+
+
 if __name__ == "__main__":
     # Tonto vs Tonto
     Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"])
-
