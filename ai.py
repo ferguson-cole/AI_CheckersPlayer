@@ -4,11 +4,9 @@
  workspace and taken turns at the keyboard for the majority of the work that we are submitting.
  Furthermore, any non programming portions of the assignment were done independently. We recognize that
  should this not be the case, we will be subject to penalties as outlined in the course syllabus.
-
 Pair Programmer 1 - Cole Ferguson, 10/6/20
 Pair Programmer 2 - Ryan Hildebrant, 10/6/20
 """
-
 
 from lib import abstractstrategy, boardlibrary
 
@@ -16,8 +14,8 @@ from math import inf
 
 
 class AlphaBetaSearch:
-    
-    def __init__(self, strategy, maxplayer, minplayer, maxplies=3, 
+
+    def __init__(self, strategy, maxplayer, minplayer, maxplies=3,
                  verbose=False):
         """"alphabeta_search - Initialize a class capable of alphabeta search
         problem - problem representation
@@ -31,7 +29,6 @@ class AlphaBetaSearch:
         self.strategy = strategy
         self.maxplies = maxplies
 
-
     def alphabeta(self, state):
         """
         Conduct an alpha beta pruning search from state
@@ -40,7 +37,7 @@ class AlphaBetaSearch:
         """
         """ Look at potential captures """
         max_p_capture_action = state.get_actions(self.maxplayer)[0]
-        max_p_can_capture = ( len(max_p_capture_action[1]) == 3 )
+        max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
             return max_p_capture_action
@@ -60,7 +57,6 @@ class AlphaBetaSearch:
         t = state.is_terminal()[0]
         p = ply >= self.maxplies
         return state.is_terminal()[0] or ply >= self.maxplies
-
 
     def maxvalue(self, state, alpha, beta, ply):
         """
@@ -83,14 +79,17 @@ class AlphaBetaSearch:
             # else:
             #     player = self.maxplayer
             for action in state.get_actions(self.maxplayer):
-                v = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
-                max_action = action
+                test = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
+                if test > v:
+                    v = test
+                    print(v)
+                    return v, action
                 alpha = max(alpha, v)
                 if alpha >= beta:
                     break
+        # print("Value of max action: " + str(v))
         return v, max_action
 
-                    
     def minvalue(self, state, alpha, beta, ply):
         """
         minvalue - alpha/beta search from a minimum node
@@ -101,7 +100,7 @@ class AlphaBetaSearch:
         :return: (v, minaction)  Value of min action and the action that
            produced it.
         """
-        max_action = None
+        min_action = None
         if self.cutoff(state, ply):
             v = self.strategy.evaluate(state)
         else:
@@ -111,16 +110,20 @@ class AlphaBetaSearch:
             # else:
             #     player = self.maxplayer
             for action in state.get_actions(self.minplayer):
-                v = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
-                max_action = action
+                test = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
+                if test < v:
+                    v = test
+                    print(v)
+                    return v, action
                 alpha = min(alpha, v)
                 if alpha <= beta:
                     break
-        return v, max_action
+        # print("Value of min action: " + str(v))
+        return v, min_action
 
 
 class Strategy(abstractstrategy.Strategy):
-    """Your strategy, maybe you can beat Tamara Tansykkuzhina, 
+    """Your strategy, maybe you can beat Tamara Tansykkuzhina,
        2019 World Women's Champion
     """
 
@@ -129,13 +132,12 @@ class Strategy(abstractstrategy.Strategy):
         Strategy - Concrete implementation of abstractstrategy.Strategy
         See abstractstrategy.Strategy for parameters
        """
-        
+
         super(Strategy, self).__init__(*args)
-        
+
         self.search = \
             AlphaBetaSearch(self, self.maxplayer, self.minplayer,
-                                   maxplies=self.maxplies, verbose=False)
-
+                            maxplies=self.maxplies, verbose=False)
 
     def play(self, board):
         """
@@ -143,11 +145,10 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         action = self.search.alphabeta(board)
-        print(action)
+        # print(action)
         return board.move(action), action
 
-
-    def evaluate(self, state, turn = None):
+    def evaluate(self, state, turn=None):
         """
         evaluate - Determine utility of terminal state or estimated
         utility of a non-terminal state
@@ -156,7 +157,6 @@ class Strategy(abstractstrategy.Strategy):
         :return:  utility or utility estimate based on strength of board
                   (bigger numbers for max player, smaller numbers for
                    min player)
-
         Takes a CheckerBoard and turn and determines the strength
         related to the maxplayer given in the constructor. For example,
         a strong red board should return a high score if the constructor
@@ -177,7 +177,6 @@ class Strategy(abstractstrategy.Strategy):
         """ Amount of moves available """
         count = len(state.get_actions(self.maxplayer))
         player_diff.append(count * weight_moves_available)
-
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
@@ -230,49 +229,20 @@ class Strategy(abstractstrategy.Strategy):
         # 1.) set up variables based on game state (from lecture slides)
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
-        
 
     def is_edge_piece(self, r, c, board_size):
-        in_first_row = (r-1) < 0
-        in_first_col = (c-1) < 0
-        in_last_row = (r+1) > (board_size - 1)
-        in_last_col = (c+1) > (board_size - 1)
+        in_first_row = (r - 1) < 0
+        in_first_col = (c - 1) < 0
+        in_last_row = (r + 1) > (board_size - 1)
+        in_last_col = (c + 1) > (board_size - 1)
         return in_first_row or in_first_col \
                or in_last_row or in_last_col
-
 
     def is_goalie(self, r, board_size, player):
         in_black_row = (r - 1) < 0
         in_red_row = (r + 1) > (board_size - 1)
-        if player is 'r':
+        if player == 'r':
             return in_red_row
-        if player is 'b':
+        if player == 'b':
             return in_black_row
-
-
-# Run test cases if invoked as main module
-if __name__ == "__main__":
-    pass
-    # b = boardlibrary.boards["Pristine"]
-    # b = boardlibrary.boards["SingleHopsRed"]
-    # redstrat = Strategy('r', b, 8)
-    # result = redstrat.evaluate(b)
-    # print("BEFORE --\n" + str(b))
-    # act = redstrat.search.alphabeta(b)
-    # print(act)
-    # b = b.move(act)
-    # print("AFTER --\n" + str(b))
-    # blackstrat = Strategy('b', b, 6)
-    #
-    # print(b)
-    # (nb, action) = redstrat.play(b)
-    # print("Red would select ", action)
-    # print(nb)
-    #
-    #
-    # (nb, action) = blackstrat.play(b)
-    # print("Black would select ", action)
-    # print(nb)
-    
- 
 
