@@ -8,7 +8,7 @@ Pair Programmer 1 - Cole Ferguson, 10/6/20
 Pair Programmer 2 - Ryan Hildebrant, 10/6/20
 """
 
-from lib import abstractstrategy, boardlibrary
+from lib import abstractstrategy
 
 from math import inf
 
@@ -56,8 +56,6 @@ class AlphaBetaSearch:
         :return: True if search is to be stopped (terminal state or cutoff
            condition reached)
         """
-        t = state.is_terminal()[0]
-        p = ply >= self.maxplies
         return state.is_terminal()[0] or ply >= self.maxplies
 
     def maxvalue(self, state, alpha, beta, ply):
@@ -151,7 +149,8 @@ class Strategy(abstractstrategy.Strategy):
         action = self.search.alphabeta(board)
         print("THIS IS OUR CHOICE OF PLAY!")
         print(action)
-        # TODO - Fix action if it is none so that we do not get an error in the move function
+        if action is None:
+            return board, None
         return board.move(action), action
 
     def evaluate(self, state, turn=None):
@@ -242,7 +241,8 @@ class Strategy(abstractstrategy.Strategy):
         # 2.) create conditional block statement to assign heuristic weight values based on player passed in
         # 3.) sum up values and return as the heuristic value of the game state
 
-    def is_edge_piece(self, r, c, board_size):
+    @staticmethod
+    def is_edge_piece(r, c, board_size):
         in_first_row = (r - 1) < 0
         in_first_col = (c - 1) < 0
         in_last_row = (r + 1) > (board_size - 1)
@@ -250,7 +250,8 @@ class Strategy(abstractstrategy.Strategy):
         return in_first_row or in_first_col \
                or in_last_row or in_last_col
 
-    def is_goalie(self, r, board_size, player):
+    @staticmethod
+    def is_goalie(r, board_size, player):
         in_black_row = (r - 1) < 0
         in_red_row = (r + 1) > (board_size - 1)
         if player == 'r':
