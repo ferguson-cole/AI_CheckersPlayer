@@ -85,10 +85,10 @@ def Game(red=human.Strategy, black=tonto.Strategy,
     if verbose:
         if winner is None:
             winner = 'No winner'
-        print(winner + " in " + str(num_moves / 2) + " moves.")
+        print(winner + " won in " + str(num_moves) + " moves.")
     return winner
 
 
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6)
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsBlack"], maxplies=6)
