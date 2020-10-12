@@ -36,7 +36,11 @@ class AlphaBetaSearch:
         :return: best action for maxplayer
         """
         """ Look at potential captures """
-        max_p_capture_action = state.get_actions(self.maxplayer)[0]
+        available_actions = state.get_actions(self.maxplayer)
+        if len(available_actions) <= 0:
+            return None
+        print(available_actions)
+        max_p_capture_action = available_actions[0]
         max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
