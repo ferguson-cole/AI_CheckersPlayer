@@ -201,10 +201,18 @@ class Strategy(abstractstrategy.Strategy):
             if self.is_goalie(r, state.edgesize, self.maxplayer):
                 player_diff.append(weight_goalie)
 
-            # TODO - make sure this works
-            #See if piece is a king, if so, try to move it back
-            if piece is 'R' and r == 0:
-                player_diff.append(weight_king_in_last_row)
+            """ If this piece:
+                  - belongs to maxplayer
+                  - is a King
+                  - is in the far row/other player's row """
+            # If piece belongs to maxplayer
+            if state.isplayer(self.maxplayer, piece):
+                # If piece is a king
+                if state.isking(piece):
+                    # If in other player's row (we can just pass in the
+                    # other player into is_goalie() to check this)
+                    if self.is_goalie(r, state.edgesize, self.minplayer):
+                        player_diff.append(weight_king_in_last_row)
 
             # Test if piece is on edge of the board
             if self.is_edge_piece(r, c, state.edgesize):
@@ -243,6 +251,13 @@ class Strategy(abstractstrategy.Strategy):
 
     @staticmethod
     def is_edge_piece(r, c, board_size):
+        """
+        Determines if the given piece is on the edge of the board
+        :param r: row of the piece
+        :param c: column of the piece
+        :param board_size: total size (in r and c) of the board
+        :return: True if in the first or last row/column
+        """
         in_first_row = (r - 1) < 0
         in_first_col = (c - 1) < 0
         in_last_row = (r + 1) > (board_size - 1)
@@ -252,6 +267,15 @@ class Strategy(abstractstrategy.Strategy):
 
     @staticmethod
     def is_goalie(r, board_size, player):
+        """
+        Determines if the given row value satisfies the requirement for a "goalie".
+        A goalie is a piece that resides in the furthest back row, which prevents the enemy from
+        kinging their pieces.
+        :param r: row index to evaluate
+        :param board_size: total number of rows on the board
+        :param player: player that we're evaluating with respect to
+        :return: True if the piece is in the furthest row from your opponent.
+        """
         in_black_row = (r - 1) < 0
         in_red_row = (r + 1) > (board_size - 1)
         if player == 'r':
