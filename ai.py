@@ -33,8 +33,6 @@ class AlphaBetaSearch:
         max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
-            print("WE CAN MAKE A CAPTURE")
-            print(max_p_can_capture)
             return max_p_capture_action
 
         """ Enter alpha-beta pruning """
