@@ -116,4 +116,4 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsBlack"], maxplies=6)
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6)

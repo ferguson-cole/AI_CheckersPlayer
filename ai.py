@@ -63,6 +63,7 @@ class AlphaBetaSearch:
         max_action = None
         if self.cutoff(state, ply):
             v = self.strategy.evaluate(state)
+            print(v)
         else:
             v = -inf
             # if ply % 2 == 0:
@@ -95,12 +96,9 @@ class AlphaBetaSearch:
         min_action = None
         if self.cutoff(state, ply):
             v = self.strategy.evaluate(state)
+            print(v)
         else:
             v = inf
-            # if ply % 2 == 0:
-            #     player = self.minplayer
-            # else:
-            #     player = self.maxplayer
             for action in state.get_actions(self.minplayer):
                 test = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
                 if test < v:
@@ -162,9 +160,9 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = 5
-        weight_num_king = 8
-        weight_king_dist = 3
+        weight_num_pawn = 20
+        weight_num_king = 40
+        weight_king_dist = 6
         weight_edge_piece = 3
         weight_moves_available = 3
         weight_goalie = 4
@@ -229,15 +227,8 @@ class Strategy(abstractstrategy.Strategy):
         dist_diff = max_p_dist_sum - min_p_dist_sum
         player_diff.append(dist_diff * weight_king_dist)
 
-        # print(str(self.maxplayer) + " == " + str(sum(player_diff)))
-        # Return sum of each aspect of our evaluation
         return sum(player_diff)
-        # return pawn_diff * weight_num_pawn +\
-        #        king_diff * weight_num_king +\
-        #        dist_diff * weight_king_dist
-        # 1.) set up variables based on game state (from lecture slides)
-        # 2.) create conditional block statement to assign heuristic weight values based on player passed in
-        # 3.) sum up values and return as the heuristic value of the game state
+
 
     @staticmethod
     def is_edge_piece(r, c, board_size):
