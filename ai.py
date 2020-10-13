@@ -36,7 +36,6 @@ class AlphaBetaSearch:
             return max_p_capture_action
 
         """ Enter alpha-beta pruning """
-        # v = self.maxvalue(state, -inf, inf, 1)
         return self.maxvalue(state, -inf, inf, 1)[1]
 
     def cutoff(self, state, ply):
@@ -66,10 +65,6 @@ class AlphaBetaSearch:
             print(v)
         else:
             v = -inf
-            # if ply % 2 == 0:
-            #     player = self.minplayer
-            # else:
-            #     player = self.maxplayer
             for action in state.get_actions(self.maxplayer):
                 new_v_value = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
                 if new_v_value > v:
@@ -78,7 +73,6 @@ class AlphaBetaSearch:
                     max_action = action
                 if alpha >= beta:
                     break
-        # print("Value of max action: " + str(v))
         if max_action is None:
             pass
         return v, max_action
@@ -107,7 +101,6 @@ class AlphaBetaSearch:
                     min_action = action
                 if alpha <= beta:
                     break
-        # print("Value of min action: " + str(v))
         if min_action is None:
             pass
         return v, min_action
@@ -160,8 +153,8 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = 20
-        weight_num_king = 40
+        weight_num_pawn = 10
+        weight_num_king = 20
         weight_king_dist = 6
         weight_edge_piece = 3
         weight_moves_available = 3
@@ -171,6 +164,8 @@ class Strategy(abstractstrategy.Strategy):
         """ Amount of moves available """
         count = len(state.get_actions(self.maxplayer))
         player_diff.append(count * weight_moves_available)
+        count = len(state.get_actions(self.minplayer))
+        player_diff.append(count * -1 * weight_moves_available)
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
@@ -188,6 +183,8 @@ class Strategy(abstractstrategy.Strategy):
             # Test if any 'goalies' (back row pieces that prevent enemy from king-ing)
             if self.is_goalie(r, state.edgesize, self.maxplayer):
                 player_diff.append(weight_goalie)
+            if self.is_goalie(r, state.edgesize, self.minplayer):
+                player_diff.append(-1 * weight_goalie)
 
             """ If this piece:
                   - belongs to maxplayer
