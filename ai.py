@@ -33,6 +33,8 @@ class AlphaBetaSearch:
         max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
+            print("WE CAN MAKE A CAPTURE")
+            print(max_p_can_capture)
             return max_p_capture_action
 
         """ Enter alpha-beta pruning """
@@ -62,7 +64,6 @@ class AlphaBetaSearch:
         max_action = None
         if self.cutoff(state, ply):
             v = self.strategy.evaluate(state)
-            print(v)
         else:
             v = -inf
             for action in state.get_actions(self.maxplayer):
@@ -90,7 +91,6 @@ class AlphaBetaSearch:
         min_action = None
         if self.cutoff(state, ply):
             v = self.strategy.evaluate(state)
-            print(v)
         else:
             v = inf
             for action in state.get_actions(self.minplayer):
@@ -153,9 +153,9 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = 10
-        weight_num_king = 20
-        weight_king_dist = 6
+        weight_num_pawn = 5
+        weight_num_king = 8
+        weight_king_dist = 3
         weight_edge_piece = 3
         weight_moves_available = 3
         weight_goalie = 4
@@ -164,8 +164,6 @@ class Strategy(abstractstrategy.Strategy):
         """ Amount of moves available """
         count = len(state.get_actions(self.maxplayer))
         player_diff.append(count * weight_moves_available)
-        count = len(state.get_actions(self.minplayer))
-        player_diff.append(count * -1 * weight_moves_available)
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
@@ -183,8 +181,6 @@ class Strategy(abstractstrategy.Strategy):
             # Test if any 'goalies' (back row pieces that prevent enemy from king-ing)
             if self.is_goalie(r, state.edgesize, self.maxplayer):
                 player_diff.append(weight_goalie)
-            if self.is_goalie(r, state.edgesize, self.minplayer):
-                player_diff.append(-1 * weight_goalie)
 
             """ If this piece:
                   - belongs to maxplayer
@@ -198,6 +194,13 @@ class Strategy(abstractstrategy.Strategy):
                     # other player into is_goalie() to check this)
                     if self.is_goalie(r, state.edgesize, self.minplayer):
                         player_diff.append(weight_king_in_last_row)
+            if state.isplayer(self.minplayer, piece):
+                # If piece is a king
+                if state.isking(piece):
+                    # If in other player's row (we can just pass in the
+                    # other player into is_goalie() to check this)
+                    if self.is_goalie(r, state.edgesize, self.minplayer):
+                        player_diff.append(-weight_king_in_last_row)
 
             # Test if piece is on edge of the board
             if self.is_edge_piece(r, c, state.edgesize):
@@ -224,8 +227,18 @@ class Strategy(abstractstrategy.Strategy):
         dist_diff = max_p_dist_sum - min_p_dist_sum
         player_diff.append(dist_diff * weight_king_dist)
 
-        return sum(player_diff)
-
+        # print(str(self.maxplayer) + " == " + str(sum(player_diff)))
+        # Return sum of each aspect of our evaluation
+        if self.maxplayer == 'r':
+            return sum(player_diff)
+        else:
+            return -sum(player_diff)
+        # return pawn_diff * weight_num_pawn +\
+        #        king_diff * weight_num_king +\
+        #        dist_diff * weight_king_dist
+        # 1.) set up variables based on game state (from lecture slides)
+        # 2.) create conditional block statement to assign heuristic weight values based on player passed in
+        # 3.) sum up values and return as the heuristic value of the game state
 
     @staticmethod
     def is_edge_piece(r, c, board_size):
