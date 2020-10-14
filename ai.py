@@ -33,8 +33,6 @@ class AlphaBetaSearch:
         max_p_can_capture = (len(max_p_capture_action[1]) == 3)
 
         if max_p_can_capture:
-            print("WE CAN MAKE A CAPTURE")
-            print(max_p_can_capture)
             return max_p_capture_action
 
         """ Enter alpha-beta pruning """
@@ -66,12 +64,15 @@ class AlphaBetaSearch:
             v = self.strategy.evaluate(state)
         else:
             v = -inf
+            # checks each available action and passes it to min
             for action in state.get_actions(self.maxplayer):
                 new_v_value = max(v, self.minvalue(state.move(action), alpha, beta, ply + 1)[0])
+                # if our new value is less than v, assign it to v and update the action and alpha
                 if new_v_value > v:
                     v = new_v_value
                     alpha = max(alpha, v)
                     max_action = action
+                # check if we can prune
                 if alpha >= beta:
                     break
         if max_action is None:
@@ -93,14 +94,18 @@ class AlphaBetaSearch:
             v = self.strategy.evaluate(state)
         else:
             v = inf
+            # checks each available action and passes it to max
             for action in state.get_actions(self.minplayer):
-                test = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
-                if test < v:
-                    v = test
+                new_v_value = min(v, self.maxvalue(state.move(action), alpha, beta, ply + 1)[0])
+                # if our new value is less than v, assign it to v and update the action and alpha
+                if new_v_value < v:
+                    v = new_v_value
                     alpha = min(alpha, v)
                     min_action = action
+                # check if we can prune
                 if alpha <= beta:
                     break
+        # if we do not have an action, end the function call
         if min_action is None:
             pass
         return v, min_action
@@ -129,7 +134,7 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         action = self.search.alphabeta(board)
-        print("Red moves " + board.get_action_str(action))
+        print("Our bot moves " + board.get_action_str(action))
         if action is None:
             return board, None
         return board.move(action), action
@@ -226,8 +231,7 @@ class Strategy(abstractstrategy.Strategy):
 
         dist_diff = max_p_dist_sum - min_p_dist_sum
         player_diff.append(dist_diff * weight_king_dist)
-
-        # print(str(self.maxplayer) + " == " + str(sum(player_diff)))
+ 
         # Return sum of each aspect of our evaluation
         if self.maxplayer == 'r':
             return sum(player_diff)
@@ -236,9 +240,6 @@ class Strategy(abstractstrategy.Strategy):
         # return pawn_diff * weight_num_pawn +\
         #        king_diff * weight_num_king +\
         #        dist_diff * weight_king_dist
-        # 1.) set up variables based on game state (from lecture slides)
-        # 2.) create conditional block statement to assign heuristic weight values based on player passed in
-        # 3.) sum up values and return as the heuristic value of the game state
 
     @staticmethod
     def is_edge_piece(r, c, board_size):
