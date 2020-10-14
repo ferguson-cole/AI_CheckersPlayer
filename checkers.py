@@ -63,6 +63,7 @@ def Game(red=human.Strategy, black=tonto.Strategy,
     player_red = 'r'
     num_moves = 0
     is_red_turn = True
+    winner = None
     # Variables to track if board state is repeated
     old_board = None
     new_board = None
@@ -90,22 +91,21 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
         if verbose:
             num_moves += 1
-        # Check to see if no moves were made
+            # print(board)
         if old_board == new_board:
             if is_red_turn is True:
                 winner = 'b'
-                return winner
             else:
                 winner = 'r'
-                return winner
-
-        # Grab the current winner (is None if no winner yet)
-        winner = board.is_terminal()[1]
+            break
 
         new_board = old_board
         # Invert our turn flag
         is_red_turn = not is_red_turn
 
+    for r, c, piece in board:
+        pass
+    # Grab the current winner (is None if no winner yet)
 
     if verbose:
         if winner is None:
@@ -116,4 +116,4 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6)
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsBlack"], maxplies=6)
