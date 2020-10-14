@@ -91,29 +91,29 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
         if verbose:
             num_moves += 1
-            # print(board)
         if old_board == new_board:
             if is_red_turn is True:
                 winner = 'b'
             else:
                 winner = 'r'
             break
-
+        # Check to see if a move is possible by comparing board states
         new_board = old_board
         # Invert our turn flag
         is_red_turn = not is_red_turn
 
-    for r, c, piece in board:
-        pass
     # Grab the current winner (is None if no winner yet)
-
     if verbose:
+        # Grab the current winner (is None if no winner yet)
+        winner = board.is_terminal()[1]
+        # Check if there is no winner
         if winner is None:
             winner = 'No winner'
         print(winner + " in " + str(num_moves) + " moves.")
+
     return winner
 
 
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["SingleHopsBlack"], maxplies=6)
+    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6)
