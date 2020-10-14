@@ -167,8 +167,10 @@ class Strategy(abstractstrategy.Strategy):
         weight_king_in_last_row = -4
 
         """ Amount of moves available """
-        count = len(state.get_actions(self.maxplayer))
-        player_diff.append(count * weight_moves_available)
+        max_p_moves = len(state.get_actions(self.maxplayer))
+        min_p_moves = len(state.get_actions(self.minplayer))
+        player_diff.append(max_p_moves * weight_moves_available)
+        player_diff.append(-(min_p_moves * weight_moves_available))
 
         """ Pawn Differences """
         # pawn_dif=      max player pawns - min player pawns
