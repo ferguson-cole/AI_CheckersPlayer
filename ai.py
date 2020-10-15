@@ -211,8 +211,7 @@ class Strategy(abstractstrategy.Strategy):
                 if self.is_edge_piece(r, c, state.edgesize):
                     player_diff.append(weight_edge_piece)
 
-        print(state)
-        print(sum(player_diff))
+        print("Maxplayer: " + str(self.maxplayer) + ", eval(): " + str(sum(player_diff)))
         # Return sum of each aspect of our evaluation
         return sum(player_diff)
 

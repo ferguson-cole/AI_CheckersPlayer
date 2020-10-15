@@ -83,11 +83,11 @@ def Game(red=human.Strategy, black=tonto.Strategy,
         if is_red_turn:
             board = red_strategy.play(board)[0]
             current_board = board
-            # print(board)
+            print(board)
         else:
             board = black_strategy.play(board)[0]
             current_board = board
-            # print(board)
+            print(board)
 
         if current_board == previous_board:
             if is_red_turn is True:
@@ -119,4 +119,5 @@ def Game(red=human.Strategy, black=tonto.Strategy,
 
 if __name__ == "__main__":
     # Tonto vs Tonto
-    Game(red=ai.Strategy, black=tonto.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6, firstmove=0)
+    # Game(red=ai.Strategy, black=ai.Strategy, init=boardlibrary.boards["multihop"], maxplies=6, firstmove=0)
+    Game(red=ai.Strategy, black=ai.Strategy, init=boardlibrary.boards["Pristine"], maxplies=6, firstmove=1)
