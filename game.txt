@@ -53625,3 +53625,4096 @@ Red moves from (4, 5) to (5, 6)
 6     .     .     B     . 
 7  .     .     B     .    
 No winner in 239 moves.
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     b     b     b     b 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     r     r     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (2, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     b     b 
+3  b     .     .     .    
+4     r     .     .     . 
+5  .     r     r     r    
+6     r     r     r     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     b     b 
+3  b     .     .     .    
+4     r     r     .     . 
+5  .     .     r     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (3, 0) to (5, 2) capturing (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     b     b 
+3  .     .     .     .    
+4     .     r     .     . 
+5  .     b     r     r    
+6     r     r     r     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     b     b 
+3  .     .     .     .    
+4     r     r     .     . 
+5  .     .     r     r    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (2, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     .     b 
+3  .     .     b     .    
+4     r     r     .     . 
+5  .     .     r     r    
+6     r     .     r     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     r     b 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     r     r    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (1, 4) to (3, 6) capturing (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     .     b 
+3  .     .     .     b    
+4     r     .     .     . 
+5  .     .     r     r    
+6     r     .     r     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     .     b 
+3  .     .     .     b    
+4     r     .     r     . 
+5  .     .     .     r    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (3, 6) to (5, 4) capturing (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     .     b 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     b     r    
+6     r     .     r     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     .     b 
+3  .     .     .     .    
+4     r     r     .     . 
+5  .     .     .     r    
+6     r     .     .     r 
+7  r     r     r     r    
+Our bot moves from (2, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     .     .     b 
+3  .     .     b     .    
+4     r     r     .     . 
+5  .     .     .     r    
+6     r     .     .     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     .     r     b 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     .     r    
+6     r     .     .     r 
+7  r     r     r     r    
+Our bot moves from (1, 6) to (3, 4) capturing (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     .    
+2     .     .     .     b 
+3  .     .     b     .    
+4     r     .     .     . 
+5  .     .     .     r    
+6     r     .     .     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     .    
+2     .     .     .     b 
+3  .     .     b     .    
+4     r     .     r     . 
+5  .     .     .     .    
+6     r     .     .     r 
+7  r     r     r     r    
+Our bot moves from (3, 4) to (5, 6) capturing (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     .    
+2     .     .     .     b 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     .     b    
+6     r     .     .     r 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     .    
+2     .     .     .     b 
+3  .     .     .     .    
+4     r     .     r     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+Our bot moves from (1, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     .     .    
+2     b     .     .     b 
+3  .     .     .     .    
+4     r     .     r     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     .     .    
+2     b     .     .     b 
+3  r     .     .     .    
+4     .     .     r     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+Our bot moves from (0, 7) to (1, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     . 
+1  .     b     .     b    
+2     b     .     .     b 
+3  r     .     .     .    
+4     .     .     r     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     . 
+1  .     b     .     b    
+2     b     .     .     b 
+3  r     .     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+Our bot moves from (2, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     . 
+1  .     b     .     b    
+2     .     .     .     b 
+3  r     b     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     . 
+1  .     b     .     b    
+2     .     .     .     b 
+3  r     b     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     .     . 
+7  r     .     r     r    
+Our bot moves from (0, 5) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     b    
+2     .     .     .     b 
+3  r     b     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     .     . 
+7  r     .     r     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     b    
+2     .     .     .     b 
+3  r     b     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     . 
+7  r     .     .     r    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     b    
+2     .     .     .     . 
+3  r     b     r     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     . 
+7  r     .     .     r    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     b    
+2     .     .     .     . 
+3  r     b     r     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+Our bot moves from (1, 6) to (2, 7)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     .    
+2     .     .     .     b 
+3  r     b     r     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     b     b     .    
+2     .     .     r     b 
+3  r     b     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+Our bot moves from (1, 2) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     b     .    
+2     .     b     r     b 
+3  r     b     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     b     r    
+2     .     b     .     b 
+3  r     b     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+Our bot moves from (1, 4) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     r    
+2     .     b     b     b 
+3  r     b     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     .     b     b     b 
+3  r     b     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+Our bot moves from (3, 2) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     .     b     b     b 
+3  r     .     .     b    
+4     b     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     r     b     b     b 
+3  .     .     .     b    
+4     b     .     .     . 
+5  .     .     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+Our bot moves from (4, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     r     b     b     b 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     b     .     .    
+6     r     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     r     b     b     b 
+3  .     .     .     b    
+4     .     r     .     . 
+5  .     .     .     .    
+6     .     r     r     r 
+7  r     .     .     .    
+Our bot moves from (2, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     . 
+1  .     .     .     .    
+2     r     .     b     b 
+3  .     .     b     b    
+4     .     r     .     . 
+5  .     .     .     .    
+6     .     r     r     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     R    
+2     r     .     b     b 
+3  .     .     b     b    
+4     .     r     .     . 
+5  .     .     .     .    
+6     .     r     r     r 
+7  r     .     .     .    
+Our bot moves from (3, 4) to (5, 2) capturing (4, 3) to (7, 4) capturing (6, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     R    
+2     r     .     b     b 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     r     r 
+7  r     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     b 
+3  .     .     R     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     r     r 
+7  r     .     B     .    
+Our bot moves from (7, 4) to (5, 6) capturing (6, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     b 
+3  .     .     R     b    
+4     .     .     .     . 
+5  .     .     .     B    
+6     .     .     .     r 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     b 
+3  .     .     R     b    
+4     .     .     r     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (3, 6) to (5, 4) capturing (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     b 
+3  .     .     R     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     R     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (5, 4) to (6, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     R     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     R    
+2     r     .     .     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     R    
+2     r     .     .     . 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     R     . 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (3, 6) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     R     . 
+3  .     .     .     .    
+4     .     .     b     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     .     .     R    
+4     .     .     b     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (4, 5) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     .     .     R    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     .     . 
+1  .     r     .     .    
+2     .     .     .     . 
+3  .     .     .     R    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (0, 1) to (2, 3) capturing (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     .    
+2     .     b     .     . 
+3  .     .     .     R    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     .    
+2     .     b     .     R 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (2, 3) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     .    
+2     .     .     .     R 
+3  .     b     .     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     b     .     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (3, 2) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     b     .    
+6     .     b     .     . 
+7  r     .     .     .    
+Our bot moves from (5, 4) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     .     b     b     . 
+7  r     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     r     b     b     . 
+7  .     .     .     .    
+Our bot moves from (4, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     r     b     b     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     .     b     b     . 
+7  .     .     .     .    
+Our bot moves from (6, 3) to (7, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     .     .     b     . 
+7  .     B     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     .     .     b     . 
+7  .     B     .     .    
+Our bot moves from (6, 5) to (7, 4)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     . 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     .     .     .     . 
+7  .     B     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     .     .     .     . 
+7  .     B     B     .    
+Our bot moves from (7, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     r     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     r     .     .     . 
+5  b     .     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     r     .     .     . 
+5  b     B     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     r     .     .    
+4     .     .     .     . 
+5  b     B     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (5, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     r     .     .    
+4     .     B     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     .     .     .    
+4     .     B     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (4, 3) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     .     R 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (0, 3) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  r     b     .     .    
+2     .     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  r     b     .     R    
+2     .     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (1, 2) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  r     .     .     R    
+2     b     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     b     .     .     . 
+3  .     B     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (3, 2) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     b     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     b     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (2, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     .     .     .     . 
+7  .     .     B     .    
+Our bot moves from (5, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     b     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     b     .     .     . 
+7  .     .     B     .    
+Our bot moves from (6, 1) to (7, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  B     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  B     .     B     .    
+Our bot moves from (7, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  b     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+Our bot moves from (3, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     .    
+Our bot moves from (7, 4) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     B     R    
+2     .     .     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (1, 4) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     b     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     B     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  b     B     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (5, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     b     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     b     .     B     . 
+7  .     .     .     .    
+Our bot moves from (6, 1) to (7, 0)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (5, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     B     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     B     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (4, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (4, 5) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     R    
+2     .     B     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (3, 6) to (2, 7)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     R    
+2     .     B     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     . 
+1  R     .     .     .    
+2     .     B     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (2, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     . 
+1  R     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (2, 7) to (1, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     R     B    
+2     .     .     .     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     B    
+2     .     .     R     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  B     .     .     .    
+Our bot moves from (7, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  R     .     .     B    
+2     .     .     R     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  R     .     .     .    
+2     .     .     .     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  R     .     .     .    
+2     .     .     B     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     R 
+1  .     .     .     .    
+2     .     .     B     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 5) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     R     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 6) to (2, 7)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     R     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     R     .     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     R     .     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 6) to (2, 7)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     B     . 
+7  .     .     .     .    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     B     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (5, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     B     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     B     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     R     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     . 
+1  .     .     .     R    
+2     .     .     .     B 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     . 
+1  .     .     .     R    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     R 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+r thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     R 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+No winner in 193 moves.
+Our bot moves from (5, 4) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     b     b     b     b 
+3  .     .     .     .    
+4     .     r     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (2, 5) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     b     b     .     b 
+3  .     .     .     b    
+4     .     r     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     b     b     .     b 
+3  .     .     .     b    
+4     r     r     .     . 
+5  .     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (1, 4) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     b     b     b     b 
+3  .     .     .     b    
+4     r     r     .     . 
+5  .     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (5, 6) to (4, 7)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     b     b     b     b 
+3  .     .     .     b    
+4     r     r     .     r 
+5  .     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (2, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     b     b 
+3  b     .     .     b    
+4     r     r     .     r 
+5  .     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (6, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     b     b     b 
+3  b     .     .     b    
+4     r     r     .     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (2, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     .     b     b 
+3  b     .     b     b    
+4     r     r     .     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (4, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     .     b     b 
+3  b     r     b     b    
+4     .     r     .     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (3, 6) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     .     b     b 
+3  b     r     b     .    
+4     .     r     b     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (3, 2) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     .     b    
+2     .     r     b     b 
+3  b     .     b     .    
+4     .     r     b     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (1, 2) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     b 
+3  b     .     b     .    
+4     .     r     b     r 
+5  r     r     .     .    
+6     .     r     r     r 
+7  r     r     r     r    
+Our bot moves from (6, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     b 
+3  b     .     b     .    
+4     .     r     b     r 
+5  r     r     .     r    
+6     .     r     .     r 
+7  r     r     r     r    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  b     .     b     b    
+4     .     r     b     r 
+5  r     r     .     r    
+6     .     r     .     r 
+7  r     r     r     r    
+Our bot moves from (5, 2) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  b     .     b     b    
+4     r     r     b     r 
+5  r     .     .     r    
+6     .     r     .     r 
+7  r     r     r     r    
+Our bot moves from (3, 0) to (5, 2) capturing (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  .     .     b     b    
+4     .     r     b     r 
+5  r     b     .     r    
+6     .     r     .     r 
+7  r     r     r     r    
+Our bot moves from (6, 3) to (4, 1) capturing (5, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  .     .     b     b    
+4     r     r     b     r 
+5  r     .     .     r    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (3, 4) to (5, 2) capturing (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  .     .     .     b    
+4     r     .     b     r 
+5  r     b     .     r    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (5, 6) to (3, 4) capturing (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     b     . 
+3  .     .     r     b    
+4     r     .     .     r 
+5  r     b     .     .    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (2, 5) to (4, 3) capturing (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     .     . 
+3  .     .     .     b    
+4     r     b     .     r 
+5  r     b     .     .    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (4, 7) to (2, 5) capturing (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     b    
+2     b     r     r     . 
+3  .     .     .     .    
+4     r     b     .     . 
+5  r     b     .     .    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (1, 6) to (3, 4) capturing (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     .     b     .    
+4     r     b     .     . 
+5  r     b     .     .    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (4, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     r     b     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     .     .     .     r 
+7  r     r     r     r    
+Our bot moves from (5, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     r     b     .    
+4     .     b     .     . 
+5  r     .     .     .    
+6     b     .     .     r 
+7  r     r     r     r    
+Our bot moves from (7, 0) to (5, 2) capturing (6, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     r     b     .    
+4     .     b     .     . 
+5  r     r     .     .    
+6     .     .     .     r 
+7  .     r     r     r    
+Our bot moves from (4, 3) to (6, 1) capturing (5, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     r     b     .    
+4     .     .     .     . 
+5  r     .     .     .    
+6     b     .     .     r 
+7  .     r     r     r    
+Our bot moves from (6, 7) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     b     r     .     . 
+3  .     r     b     .    
+4     .     .     .     . 
+5  r     .     .     r    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (2, 1) to (4, 3) capturing (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     .     . 
+3  .     .     b     .    
+4     .     b     .     . 
+5  r     .     .     r    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (5, 6) to (4, 7)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     .     . 
+3  .     .     b     .    
+4     .     b     .     r 
+5  r     .     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (4, 3) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     .     . 
+3  .     .     b     .    
+4     .     .     .     r 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (4, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     .     . 
+3  .     .     b     r    
+4     .     .     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (3, 4) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     .     . 
+3  .     .     .     r    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (3, 6) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     .     .     .    
+2     .     r     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (0, 5) to (1, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     b 
+1  b     .     .     b    
+2     .     r     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (2, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     b 
+1  b     .     r     b    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (1, 6) to (3, 4) capturing (2, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     .     b 
+1  b     .     r     .    
+2     .     .     .     . 
+3  .     .     b     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (1, 4) to (0, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  b     .     .     .    
+2     .     .     .     . 
+3  .     .     b     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (1, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     b     .     .     . 
+3  .     .     b     .    
+4     .     b     .     . 
+5  r     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     b     .     .     . 
+3  .     .     b     .    
+4     r     b     .     . 
+5  .     b     .     .    
+6     b     .     .     . 
+7  .     r     r     r    
+Our bot moves from (6, 1) to (7, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     b     .     .     . 
+3  .     .     b     .    
+4     r     b     .     . 
+5  .     b     .     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     b     .     .     . 
+3  r     .     b     .    
+4     .     b     .     . 
+5  .     b     .     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (2, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     .     .     .     . 
+3  r     b     b     .    
+4     .     b     .     . 
+5  .     b     .     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (3, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     b     b     .    
+4     .     b     .     . 
+5  .     b     .     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (4, 3) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  .     .     .     .    
+2     r     .     .     . 
+3  .     b     b     .    
+4     .     .     .     . 
+5  .     b     b     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (2, 1) to (1, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     b     b     .    
+4     .     .     .     . 
+5  .     b     b     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     b     .     .    
+4     .     .     b     . 
+5  .     b     b     .    
+6     .     .     .     . 
+7  B     r     r     r    
+Our bot moves from (7, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     b     .     .    
+4     .     .     b     . 
+5  .     b     b     .    
+6     r     .     .     . 
+7  B     .     r     r    
+Our bot moves from (3, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     b     b     . 
+5  .     b     b     .    
+6     r     .     .     . 
+7  B     .     r     r    
+Our bot moves from (6, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     b     b     . 
+5  r     b     b     .    
+6     .     .     .     . 
+7  B     .     r     r    
+Our bot moves from (7, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     b     b     . 
+5  r     b     b     .    
+6     B     .     .     . 
+7  .     .     r     r    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     r     b     b     . 
+5  .     b     b     .    
+6     B     .     .     . 
+7  .     .     r     r    
+Our bot moves from (4, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     r     b     .     . 
+5  .     b     b     b    
+6     B     .     .     . 
+7  .     .     r     r    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     b     .     . 
+5  .     b     b     b    
+6     B     .     .     . 
+7  .     .     r     r    
+Our bot moves from (5, 6) to (6, 7)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     b     .     . 
+5  .     b     b     .    
+6     B     .     .     b 
+7  .     .     r     r    
+Our bot moves from (3, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     r     .     .     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  .     b     b     .    
+6     B     .     .     b 
+7  .     .     r     r    
+Our bot moves from (6, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     .     .     .    
+2     r     .     .     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  B     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (2, 1) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     R     b 
+1  r     r     .     .    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  B     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (0, 1) to (2, 3) capturing (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  r     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  B     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (1, 0) to (0, 1)
+   0  1  2  3  4  5  6  7 
+0     R     b     R     b 
+1  .     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  B     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     R     b     R     b 
+1  .     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (0, 1) to (1, 0)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     b     b     .    
+6     .     .     .     b 
+7  .     .     r     r    
+Our bot moves from (5, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     .    
+6     b     .     .     b 
+7  .     .     r     r    
+Our bot moves from (7, 4) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     .    
+6     b     .     r     b 
+7  .     .     .     r    
+Our bot moves from (6, 1) to (7, 0)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     .    
+6     .     .     r     b 
+7  B     .     .     r    
+Our bot moves from (6, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     r    
+6     .     .     .     b 
+7  B     .     .     r    
+Our bot moves from (7, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     r    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (5, 6) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     B     b     r     . 
+5  .     .     b     .    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  B     .     .     .    
+4     .     b     r     . 
+5  .     .     b     .    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (4, 5) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  B     .     .     r    
+4     .     b     .     . 
+5  .     .     b     .    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (3, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     .     . 
+3  .     .     .     r    
+4     B     b     .     . 
+5  .     .     b     .    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (3, 6) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     r     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     b     .    
+6     B     .     .     b 
+7  .     .     .     r    
+Our bot moves from (5, 4) to (6, 3)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     b     r     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (0, 5) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     b     r     . 
+3  .     .     .     .    
+4     B     b     .     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (2, 3) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     .     r     . 
+3  .     .     b     .    
+4     B     b     .     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (1, 4) to (0, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     .     r     . 
+3  .     .     b     .    
+4     B     b     .     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     R     b 
+1  R     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     B     b     b     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (0, 5) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     B     b     b     . 
+5  .     .     .     .    
+6     B     b     .     b 
+7  .     .     .     r    
+Our bot moves from (6, 3) to (7, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     B     b     b     . 
+5  .     .     .     .    
+6     B     .     .     b 
+7  .     B     .     r    
+Our bot moves from (7, 6) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     B     b     b     . 
+5  .     .     .     .    
+6     B     .     r     b 
+7  .     B     .     .    
+Our bot moves from (4, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  R     .     R     .    
+2     .     .     r     . 
+3  .     B     .     .    
+4     .     b     b     . 
+5  .     .     .     .    
+6     B     .     r     b 
+7  .     B     .     .    
+Our bot moves from (1, 0) to (0, 1)
+   0  1  2  3  4  5  6  7 
+0     R     b     .     b 
+1  .     .     R     .    
+2     .     .     r     . 
+3  .     B     .     .    
+4     .     b     b     . 
+5  .     .     .     .    
+6     B     .     r     b 
+7  .     B     .     .    
+Our bot moves from (4, 5) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     R     b     .     b 
+1  .     .     R     .    
+2     .     .     r     . 
+3  .     B     .     .    
+4     .     b     .     . 
+5  .     .     b     .    
+6     B     .     r     b 
+7  .     B     .     .    
+Our bot moves from (6, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     R     b     .     b 
+1  .     .     R     .    
+2     .     .     r     . 
+3  .     B     .     .    
+4     .     b     .     . 
+5  .     .     b     r    
+6     B     .     .     b 
+7  .     B     .     .    
+Our bot moves from (3, 2) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     R     b     .     b 
+1  .     .     R     .    
+2     B     .     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  .     .     b     r    
+6     B     .     .     b 
+7  .     B     .     .    
+Our bot moves from (0, 1) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  .     R     R     .    
+2     B     .     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  .     .     b     r    
+6     B     .     .     b 
+7  .     B     .     .    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  .     R     R     .    
+2     B     .     r     . 
+3  .     .     .     .    
+4     .     b     .     . 
+5  .     B     b     r    
+6     .     .     .     b 
+7  .     B     .     .    
+Our bot moves from (1, 2) to (3, 0) capturing (2, 1)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  .     .     R     .    
+2     .     .     r     . 
+3  R     .     .     .    
+4     .     b     .     . 
+5  .     B     b     r    
+6     .     .     .     b 
+7  .     B     .     .    
+Our bot moves from (5, 4) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  .     .     R     .    
+2     .     .     r     . 
+3  R     .     .     .    
+4     .     b     .     . 
+5  .     B     .     r    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (2, 5) to (1, 6)
+   0  1  2  3  4  5  6  7 
+0     .     b     .     b 
+1  .     .     R     r    
+2     .     .     .     . 
+3  R     .     .     .    
+4     .     b     .     . 
+5  .     B     .     r    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (0, 3) to (2, 5) capturing (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     r    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     b     .     . 
+5  .     B     .     r    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (5, 6) to (4, 7)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     r    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     b     .     r 
+5  .     B     .     .    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (4, 3) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     r    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     .     .     r 
+5  .     B     b     .    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (1, 6) to (0, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     b 
+1  .     .     .     .    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     .     .     r 
+5  .     B     b     .    
+6     .     .     b     b 
+7  .     B     .     .    
+Our bot moves from (7, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     R     b 
+1  .     .     .     .    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     .     .     r 
+5  .     B     b     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (0, 5) to (1, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     R    
+2     .     .     b     . 
+3  R     .     .     .    
+4     .     .     .     r 
+5  .     B     b     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (2, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     R    
+2     .     .     .     . 
+3  R     .     b     .    
+4     .     .     .     r 
+5  .     B     b     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (3, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     R    
+2     .     .     .     . 
+3  .     .     b     .    
+4     R     .     .     r 
+5  .     B     b     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (0, 7) to (2, 5) capturing (1, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     b     . 
+3  .     .     b     .    
+4     R     .     .     r 
+5  .     B     b     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (4, 1) to (6, 3) capturing (5, 2) to (4, 5) capturing (5, 4) to (2, 3) capturing (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     R     b     . 
+3  .     .     .     .    
+4     .     .     .     r 
+5  .     .     .     .    
+6     B     .     b     b 
+7  .     .     .     .    
+Our bot moves from (6, 5) to (7, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     R     b     . 
+3  .     .     .     .    
+4     .     .     .     r 
+5  .     .     .     .    
+6     B     .     .     b 
+7  .     .     B     .    
+Our bot moves from (2, 3) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     b     . 
+3  .     R     .     .    
+4     .     .     .     r 
+5  .     .     .     .    
+6     B     .     .     b 
+7  .     .     B     .    
+Our bot moves from (6, 7) to (7, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     b     . 
+3  .     R     .     .    
+4     .     .     .     r 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (3, 2) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     b     . 
+3  .     .     .     .    
+4     R     .     .     r 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (2, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     b     .    
+4     R     .     .     r 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  R     .     b     .    
+4     .     .     .     r 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (3, 4) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  R     .     .     .    
+4     .     b     .     r 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (4, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  R     .     .     r    
+4     .     b     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     B     B    
+Our bot moves from (7, 4) to (6, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  R     .     .     r    
+4     .     b     .     . 
+5  .     .     .     .    
+6     B     B     .     . 
+7  .     .     .     B    
+Our bot moves from (3, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     R     .     .     . 
+3  .     .     .     r    
+4     .     b     .     . 
+5  .     .     .     .    
+6     B     B     .     . 
+7  .     .     .     B    
+Our bot moves from (6, 3) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     R     .     .     . 
+3  .     .     .     r    
+4     .     b     .     . 
+5  .     .     B     .    
+6     B     .     .     . 
+7  .     .     .     B    
+Our bot moves from (2, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     R     .     r    
+4     .     b     .     . 
+5  .     .     B     .    
+6     B     .     .     . 
+7  .     .     .     B    
+Our bot moves from (5, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     R     .     r    
+4     .     b     B     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     .     .     B    
+Our bot moves from (3, 2) to (5, 4) capturing (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     r    
+4     .     .     B     . 
+5  .     .     R     .    
+6     B     .     .     . 
+7  .     .     .     B    
+Our bot moves from (4, 5) to (2, 7) capturing (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     R     .    
+6     B     .     .     . 
+7  .     .     .     B    
+Our bot moves from (5, 4) to (6, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     R     .     . 
+7  .     .     .     B    
+Our bot moves from (2, 7) to (3, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     R     .     . 
+7  .     .     .     B    
+Our bot moves from (6, 3) to (7, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  .     .     .     .    
+6     B     .     .     . 
+7  .     R     .     B    
+Our bot moves from (6, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  B     .     .     .    
+6     .     .     .     . 
+7  .     R     .     B    
+Our bot moves from (7, 2) to (6, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     .     .     .     . 
+5  B     .     .     .    
+6     .     R     .     . 
+7  .     .     .     B    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     B     .     .     . 
+5  .     .     .     .    
+6     .     R     .     . 
+7  .     .     .     B    
+Our bot moves from (6, 3) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     . 
+3  .     .     .     B    
+4     B     .     .     . 
+5  .     .     R     .    
+6     .     .     .     . 
+7  .     .     .     B    
+Our bot moves from (3, 6) to (2, 7)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     B     .     .     . 
+5  .     .     R     .    
+6     .     .     .     . 
+7  .     .     .     B    
+Our bot moves from (5, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     B     .     R     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     B    
+Our bot moves from (7, 6) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     .     .    
+4     B     .     R     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     .     R     .    
+4     B     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     B     R     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 4) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     B 
+3  .     B     .     .    
+4     .     .     R     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (3, 2) to (2, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     B     .     B 
+3  .     .     .     .    
+4     .     .     R     . 
+5  .     .     .     .    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (4, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     B     .     B 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     R    
+6     .     .     B     . 
+7  .     .     .     .    
+Our bot moves from (6, 5) to (4, 7) capturing (5, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     B     .     B 
+3  .     .     .     .    
+4     .     .     .     B 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b in 130 moves.
+Our bot moves from (5, 4) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     b     b     b     b 
+3  .     .     .     .    
+4     .     r     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     .     b     b     b 
+3  .     b     .     .    
+4     .     r     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (4, 3) to (2, 1) capturing (3, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  b     b     b     b    
+2     r     b     b     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     b     b    
+2     .     b     b     b 
+3  .     b     .     .    
+4     .     .     .     . 
+5  r     r     .     r    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (5, 6) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     b     b    
+2     .     b     b     b 
+3  .     b     .     .    
+4     .     .     r     . 
+5  r     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     b     b    
+2     .     .     b     b 
+3  .     b     b     .    
+4     .     .     r     . 
+5  r     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (4, 5) to (2, 3) capturing (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     b     b     b    
+2     .     r     b     b 
+3  .     b     .     .    
+4     .     .     .     . 
+5  r     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     b 
+3  .     b     b     .    
+4     .     .     .     . 
+5  r     r     .     .    
+6     r     r     r     r 
+7  r     r     r     r    
+Our bot moves from (6, 3) to (5, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     b 
+3  .     b     b     .    
+4     .     .     .     . 
+5  r     r     r     .    
+6     r     .     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     b 
+3  .     b     .     .    
+4     .     .     b     . 
+5  r     r     r     .    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (5, 4) to (3, 6) capturing (4, 5)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     b 
+3  .     b     .     r    
+4     .     .     .     . 
+5  r     r     .     .    
+6     r     .     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     b     .     .    
+4     .     .     b     . 
+5  r     r     .     .    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (5, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     b     .     .    
+4     .     r     b     . 
+5  r     .     .     .    
+6     r     .     r     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     .     .     .    
+4     .     .     b     . 
+5  r     .     b     .    
+6     r     .     r     r 
+7  r     r     r     r    
+Our bot moves from (6, 5) to (4, 3) capturing (5, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     .     .     .    
+4     .     r     b     . 
+5  r     .     .     .    
+6     r     .     .     r 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     .     .     .    
+4     .     r     .     . 
+5  r     .     .     b    
+6     r     .     .     r 
+7  r     r     r     r    
+Our bot moves from (6, 7) to (4, 5) capturing (5, 6)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     b     . 
+3  .     .     .     .    
+4     .     r     r     . 
+5  r     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     .     . 
+3  .     .     b     .    
+4     .     r     r     . 
+5  r     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+Our bot moves from (4, 3) to (2, 5) capturing (3, 4)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     b     b    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     r     . 
+5  r     .     .     .    
+6     r     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     .     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  r     .     b     .    
+6     r     .     .     . 
+7  r     r     r     r    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     b     b     b     b 
+1  .     .     .     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  r     r     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     b     b     b 
+1  .     b     .     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  r     r     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+Our bot moves from (5, 2) to (4, 3)
+   0  1  2  3  4  5  6  7 
+0     .     b     b     b 
+1  .     b     .     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     r     .     . 
+5  r     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     b     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     r     .     . 
+5  r     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     b     b    
+2     .     .     .     . 
+3  .     .     .     .    
+4     r     r     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     b    
+2     .     b     .     . 
+3  .     .     .     .    
+4     r     r     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     b    
+2     .     b     .     . 
+3  r     .     .     .    
+4     .     r     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     b    
+2     .     .     .     . 
+3  r     .     b     .    
+4     .     r     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+Our bot moves from (4, 3) to (2, 5) capturing (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     b    
+2     .     .     r     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     b     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  r     r     r     r    
+Our bot moves from (7, 4) to (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     b     .    
+4     .     .     .     . 
+5  .     .     b     .    
+6     .     .     r     . 
+7  r     r     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     b     .     . 
+5  .     .     b     .    
+6     .     .     r     . 
+7  r     r     .     r    
+Our bot moves from (6, 5) to (5, 6)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     b     .     . 
+5  .     .     b     r    
+6     .     .     .     . 
+7  r     r     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     b     b     r    
+6     .     .     .     . 
+7  r     r     .     r    
+Our bot moves from (7, 2) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     b     b     r    
+6     r     .     .     . 
+7  r     .     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     b     r    
+6     r     b     .     . 
+7  r     .     .     r    
+Our bot moves from (6, 1) to (5, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     r     b     r    
+6     .     b     .     . 
+7  r     .     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     r     b     r    
+6     .     .     .     . 
+7  r     B     .     r    
+Our bot moves from (5, 2) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     r     .     .     . 
+5  .     .     b     r    
+6     .     .     .     . 
+7  r     B     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     r     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+Our bot moves from (4, 1) to (3, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     b     .     .    
+2     .     .     .     . 
+3  r     r     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     .     .     .    
+2     .     b     .     . 
+3  r     r     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+Our bot moves from (3, 2) to (1, 4) capturing (2, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     b     b 
+1  .     .     r     .    
+2     .     .     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     .    
+2     .     b     .     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+Our bot moves from (3, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     .    
+2     r     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     b     .     . 
+7  r     B     .     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  .     .     .     .    
+2     r     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     .     .     . 
+7  r     B     B     r    
+Our bot moves from (2, 1) to (1, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     b 
+1  r     .     .     .    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     .     .     . 
+7  r     B     B     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  r     .     .     b    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     .     .     . 
+7  r     B     B     r    
+Our bot moves from (1, 0) to (0, 1)
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     b    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     .     .     . 
+7  r     B     B     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     .     . 
+1  .     .     .     b    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     B     .     . 
+7  r     .     B     r    
+Our bot moves from (0, 1) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     R     .     b    
+2     .     b     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     B     .     . 
+7  r     .     B     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     R     .     .    
+2     .     b     .     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     B     .     . 
+7  r     .     B     r    
+Our bot moves from (1, 2) to (3, 4) capturing (2, 3)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     b 
+3  .     .     R     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     B     .     . 
+7  r     .     B     r    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     b 
+3  .     .     R     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     B     B     . 
+7  r     .     .     r    
+Our bot moves from (7, 6) to (5, 4) capturing (6, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     .     .     b 
+3  .     .     R     .    
+4     .     .     .     . 
+5  .     .     r     r    
+6     .     B     .     . 
+7  r     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     B     .     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     r    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (5, 6) to (4, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     .     .    
+2     .     B     .     b 
+3  .     .     .     .    
+4     .     .     r     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     B     .    
+2     .     .     .     b 
+3  .     .     .     .    
+4     .     .     r     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (4, 5) to (3, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     B     .    
+2     .     .     .     b 
+3  .     .     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     .     b 
+3  .     .     r     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (3, 4) to (2, 5)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     b 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  r     .     .     .    
+Our bot moves from (7, 0) to (6, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     b    
+4     .     .     .     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     b     . 
+5  .     .     .     .    
+6     r     .     .     . 
+7  .     .     .     .    
+Our bot moves from (6, 1) to (5, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     b     . 
+5  r     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  r     .     b     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (5, 0) to (4, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     b     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     r     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  .     .     .     .    
+Our bot moves from (4, 1) to (3, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     b     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  r     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     B     .     .    
+Our bot moves from (3, 0) to (2, 1)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     r     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     B     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     .    
+2     r     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     B     .     . 
+7  .     .     .     .    
+Our bot moves from (2, 1) to (1, 0)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  r     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     B     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  r     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     B     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (1, 0) to (0, 1)
+   0  1  2  3  4  5  6  7 
+0     R     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     B     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     R     .     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (0, 1) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     R     .     .    
+2     .     .     r     . 
+3  .     .     .     .    
+4     .     .     B     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     R     .     .    
+2     .     .     r     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (1, 2) to (0, 3)
+   0  1  2  3  4  5  6  7 
+0     .     R     B     . 
+1  .     .     .     .    
+2     .     .     r     . 
+3  .     .     B     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     R     B     . 
+1  .     .     .     B    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (0, 3) to (1, 2)
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     R     .     B    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     R     B     B    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (1, 2) to (0, 3)
+   0  1  2  3  4  5  6  7 
+0     .     R     .     . 
+1  .     .     B     B    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     R     .     . 
+1  .     .     .     B    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+Our bot moves from (0, 3) to (1, 4)
+   0  1  2  3  4  5  6  7 
+0     .     .     .     . 
+1  .     .     R     B    
+2     .     B     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b thinking using tonto strategy...
+   0  1  2  3  4  5  6  7 
+0     .     .     B     . 
+1  .     .     .     B    
+2     .     .     .     . 
+3  .     .     .     .    
+4     .     .     .     . 
+5  .     .     .     .    
+6     .     .     .     . 
+7  .     .     .     .    
+b in 86 moves.

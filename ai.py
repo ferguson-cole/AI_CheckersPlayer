@@ -160,7 +160,6 @@ class Strategy(abstractstrategy.Strategy):
         """ Weights """
         weight_num_pawn = 5
         weight_num_king = 8
-        weight_king_dist = 3
         weight_edge_piece = 3
         weight_moves_available = 3
         weight_goalie = 4
@@ -173,17 +172,23 @@ class Strategy(abstractstrategy.Strategy):
         player_diff.append(-(min_p_moves * weight_moves_available))
 
         """ Pawn Differences """
-        # pawn_dif=      max player pawns - min player pawns
+        # pawn_dif=      red pawns        - black pawns
         pawn_diff = state.get_pawnsN()[0] - state.get_pawnsN()[1]
+        # Since get_pawnsN() returns red first, if maxplayer is black we
+        # must invert the value of the difference between the two
+        if self.maxplayer is 'b':
+            pawn_diff = -pawn_diff
         player_diff.append(pawn_diff * weight_num_pawn)
-        # king_dif=      max player kings - min player kings
+
+        # king_dif=      red kings        - black kings
         king_diff = state.get_kingsN()[0] - state.get_kingsN()[1]
+        # Since get_kingsN() returns red first, if maxplayer is black we
+        # must invert the value of the difference between the two
+        if self.maxplayer is 'b':
+            king_diff = -king_diff
         player_diff.append(king_diff * weight_num_king)
 
-        """ Distance to be King, Edge Pieces """
-        max_p_dist_sum = 0
-        min_p_dist_sum = 0
-
+        """ Edge Pieces, Goalies, Kings in far row """
         for r, c, piece in state:
             # Test if any 'goalies' (back row pieces that prevent enemy from king-ing)
             if self.is_goalie(r, state.edgesize, self.maxplayer):
@@ -201,47 +206,16 @@ class Strategy(abstractstrategy.Strategy):
                     # other player into is_goalie() to check this)
                     if self.is_goalie(r, state.edgesize, self.minplayer):
                         player_diff.append(weight_king_in_last_row)
-            if state.isplayer(self.minplayer, piece):
-                # If piece is a king
-                if state.isking(piece):
-                    # If in other player's row (we can just pass in the
-                    # other player into is_goalie() to check this)
-                    if self.is_goalie(r, state.edgesize, self.minplayer):
-                        player_diff.append(-weight_king_in_last_row)
 
-            # Test if piece is on edge of the board
-            if self.is_edge_piece(r, c, state.edgesize):
-                # If edge piece is maxplayer's
-                if state.isplayer(self.maxplayer, piece):
-                    player_weight = 1
-                else:
-                    player_weight = 0
-
-                player_diff.append(weight_edge_piece * player_weight)
-
-            # Evaluate the approx. distance to be a king
+            # If edge piece is maxplayer's
             if state.isplayer(self.maxplayer, piece):
-                max_p_dist_sum += state.disttoking(self.maxplayer, r)
-            if state.isplayer(self.minplayer, piece):
-                min_p_dist_sum += state.disttoking(self.minplayer, r)
+                # Test if piece is on edge of the board
+                if self.is_edge_piece(r, c, state.edgesize):
+                    player_diff.append(weight_edge_piece)
 
-        # larger sums -> smaller values
-        if max_p_dist_sum != 0:
-            max_p_dist_sum = 1 / max_p_dist_sum
-        if min_p_dist_sum != 0:
-            min_p_dist_sum = 1 / min_p_dist_sum
-
-        dist_diff = max_p_dist_sum - min_p_dist_sum
-        player_diff.append(dist_diff * weight_king_dist)
- 
         # Return sum of each aspect of our evaluation
-        if self.maxplayer == 'r':
-            return sum(player_diff)
-        else:
-            return -sum(player_diff)
-        # return pawn_diff * weight_num_pawn +\
-        #        king_diff * weight_num_king +\
-        #        dist_diff * weight_king_dist
+        return sum(player_diff)
+
 
     @staticmethod
     def is_edge_piece(r, c, board_size):
