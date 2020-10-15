@@ -207,12 +207,12 @@ class Strategy(abstractstrategy.Strategy):
                     if self.is_goalie(r, state.edgesize, self.minplayer):
                         player_diff.append(weight_king_in_last_row)
 
-            # If edge piece is maxplayer's
-            if state.isplayer(self.maxplayer, piece):
                 # Test if piece is on edge of the board
                 if self.is_edge_piece(r, c, state.edgesize):
                     player_diff.append(weight_edge_piece)
 
+        print(state)
+        print(sum(player_diff))
         # Return sum of each aspect of our evaluation
         return sum(player_diff)
 

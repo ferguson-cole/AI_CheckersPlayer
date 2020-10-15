@@ -83,11 +83,11 @@ def Game(red=human.Strategy, black=tonto.Strategy,
         if is_red_turn:
             board = red_strategy.play(board)[0]
             current_board = board
-            print(board)
+            # print(board)
         else:
             board = black_strategy.play(board)[0]
             current_board = board
-            print(board)
+            # print(board)
 
         if current_board == previous_board:
             if is_red_turn is True:
