@@ -26,6 +26,7 @@ class AlphaBetaSearch:
         :return: best action for maxplayer
         """
         """ Look at potential captures """
+        print('aksdjflkasjdfl;kajsd;flkjasw;dlkfjaslkdjf')
         available_actions = state.get_actions(self.maxplayer)
         if len(available_actions) <= 0:
             return None
