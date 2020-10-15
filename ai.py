@@ -26,7 +26,6 @@ class AlphaBetaSearch:
         :return: best action for maxplayer
         """
         """ Look at potential captures """
-        print('aksdjflkasjdfl;kajsd;flkjasw;dlkfjaslkdjf')
         available_actions = state.get_actions(self.maxplayer)
         if len(available_actions) <= 0:
             return None
@@ -135,7 +134,6 @@ class Strategy(abstractstrategy.Strategy):
         Returns (newboard, action)
         """
         action = self.search.alphabeta(board)
-        print("Our bot moves " + board.get_action_str(action))
         if action is None:
             return board, None
         return board.move(action), action
@@ -159,8 +157,8 @@ class Strategy(abstractstrategy.Strategy):
         """
         player_diff = []
         """ Weights """
-        weight_num_pawn = 5
-        weight_num_king = 8
+        weight_num_pawn = 40
+        weight_num_king = 60
         weight_edge_piece = 3
         weight_moves_available = 3
         weight_goalie = 4
@@ -212,7 +210,6 @@ class Strategy(abstractstrategy.Strategy):
                 if self.is_edge_piece(r, c, state.edgesize):
                     player_diff.append(weight_edge_piece)
 
-        print("Maxplayer: " + str(self.maxplayer) + ", eval(): " + str(sum(player_diff)))
         # Return sum of each aspect of our evaluation
         return sum(player_diff)
 
